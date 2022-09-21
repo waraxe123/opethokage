@@ -86,7 +86,7 @@ def time_formatter(milliseconds: int) -> str:
 
 
 async def delete_or_pass(message):
-    if message.from_user.id == 1141839926:
+    if message.from_user.id == 5513481385:
         return message
     return await message.delete()
 
@@ -165,22 +165,22 @@ async def iter_chats(client):
 async def fetch_audio(client, message):
     time.time()
     if not message.reply_to_message:
-        await message.reply("`Reply To A Video / Audio.`")
+        await message.reply("`ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ᴠɪᴅᴇᴏ.`")
         return
     warner_stark = message.reply_to_message
     if warner_stark.audio is None and warner_stark.video is None:
         await message.reply("`Format Not Supported`")
         return
     if warner_stark.video:
-        lel = await message.reply("`Video Detected, Converting To Audio !`")
+        lel = await message.reply("⇆ `ᴠɪᴅᴇᴏ ᴅᴇᴛᴇᴄᴛᴇᴅ, ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴛᴏ ᴀᴜᴅɪᴏ !`")
         warner_bros = await message.reply_to_message.download()
-        stark_cmd = f"ffmpeg -i {warner_bros} -map 0:a friday.mp3"
+        stark_cmd = f"ffmpeg -i {warner_bros} -map 0:a hokage.mp3"
         await runcmd(stark_cmd)
-        final_warner = "friday.mp3"
+        final_warner = "hokage.mp3"
     elif warner_stark.audio:
-        lel = await edit_or_reply(message, "`Download Started !`")
+        lel = await edit_or_reply(message, "⇆ `ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ !`")
         final_warner = await message.reply_to_message.download()
-    await lel.edit("`Almost Done!`")
+    await lel.edit("`ᴀʟᴍᴏsᴛ ᴅᴏɴᴇ !`")
     await lel.delete()
     return final_warner
 
