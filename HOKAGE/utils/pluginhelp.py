@@ -73,7 +73,7 @@ def time_formatter(milliseconds: int) -> str:
 
 
 async def delete_or_pass(message):
-    if message.from_user.id == 1452219013:
+    if message.from_user.id == 5513481385:
         return message
     return await message.delete()
 
@@ -161,9 +161,9 @@ async def fetch_audio(client, message):
     if warner_stark.video:
         lel = await message.reply("`ᴠɪᴅᴇᴏ ᴅᴇᴛᴇᴄᴛᴇᴅ, ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴛᴏ ᴀᴜᴅɪᴏ !`")
         warner_bros = await message.reply_to_message.download()
-        stark_cmd = f"ffmpeg -i {warner_bros} -map 0:a friday.mp3"
+        stark_cmd = f"ffmpeg -i {warner_bros} -map 0:a hokage.mp3"
         await runcmd(stark_cmd)
-        final_warner = "friday.mp3"
+        final_warner = "hokage.mp3"
     elif warner_stark.audio:
         lel = await edit_or_reply(message, "`ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ !`")
         final_warner = await message.reply_to_message.download()
