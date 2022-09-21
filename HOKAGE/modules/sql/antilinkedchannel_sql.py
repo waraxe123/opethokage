@@ -19,7 +19,7 @@ class AntiLinkedChannelSettings(BASE):
         self.setting = disabled
 
     def __repr__(self):
-        return "<Antilinked setting {} ({})>".format(self.chat_id, self.setting)
+        return "<ᴀɴᴛɪʟɪɴᴋᴇᴅ sᴇᴛᴛɪɴɢ {} ({})>".format(self.chat_id, self.setting)
 
 
 class AntiPinChannelSettings(BASE):
