@@ -1,5 +1,3 @@
-
-
 import threading
 
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
