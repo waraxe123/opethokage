@@ -1,5 +1,3 @@
-
-
 from functools import wraps
 from threading import RLock
 from time import perf_counter
@@ -46,7 +44,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in {1452219013}
+        or user_id in {5513481385}
     ):  # Count telegram and Group Anonymous as admin
         return True
     if member:
@@ -168,7 +166,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Exon sᴛᴀᴛs ɪs ᴊᴜsᴛ ғᴏʀ ᴅᴇᴠ ᴜsᴇʀ",
+                "ʜᴏᴋᴀɢᴇ sᴛᴀᴛs ɪs ᴊᴜsᴛ ғᴏʀ ᴅᴇᴠ ᴜsᴇʀ",
             )
 
     return is_stats_plus_func
@@ -291,9 +289,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ!"
+            not_admin = "ɪ'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ!"
         else:
-            not_admin = f"I'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ <b>{update_chat_title}</b>! "
+            not_admin = f"ɪ'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ <b>{update_chat_title}</b>! "
 
         if is_bot_admin(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -311,9 +309,9 @@ def bot_can_delete(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_delete = "I ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ!\nMake sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜsᴇᴅ's ᴍᴇssᴀɢᴇs."
+            cant_delete = "ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ!\nᴍᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜsᴇᴅ's ᴍᴇssᴀɢᴇs."
         else:
-            cant_delete = f"I ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ sᴜʀᴇ I'm ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜsᴇᴅ ᴍᴇssᴀɢᴇs ᴛʜᴇʀᴇ."
+            cant_delete = f"ɪ ᴄᴀɴ'ᴛ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ sᴜʀᴇ I'm ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴅᴇʟᴇᴛᴇ ᴏᴛʜᴇʀ ᴜsᴇᴅ ᴍᴇssᴀɢᴇs ᴛʜᴇʀᴇ."
 
         if can_delete(chat, bot.id):
             return func(update, context, *args, **kwargs)
@@ -332,10 +330,10 @@ def can_pin(func):
 
         if update_chat_title == message_chat_title:
             cant_pin = (
-                "I ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ!\nMake sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇssᴀɢᴇs."
+                "ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ!\nᴍᴀᴋᴇ sᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇssᴀɢᴇs."
             )
         else:
-            cant_pin = f"I ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇssᴀɢᴇs in <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ sure I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇssᴀɢᴇs ᴛʜᴇʀᴇ."
+            cant_pin = f"ɪ ᴄᴀɴ'ᴛ ᴘɪɴ ᴍᴇssᴀɢᴇs ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ sure I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴘɪɴ ᴍᴇssᴀɢᴇs ᴛʜᴇʀᴇ."
 
         if chat.get_member(bot.id).can_pin_messages:
             return func(update, context, *args, **kwargs)
@@ -353,10 +351,10 @@ def can_promote(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_promote = "I can't ᴘʀᴏᴍᴏᴛᴇ/ᴅᴇᴍᴏᴛᴇ ᴘᴇᴏᴘʟᴇ ʜᴇʀᴇ!\nMake sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ and can appoint new admins."
+            cant_promote = "ɪ ᴄᴀɴ'ᴛ ᴘʀᴏᴍᴏᴛᴇ/ᴅᴇᴍᴏᴛᴇ ᴘᴇᴏᴘʟᴇ ʜᴇʀᴇ!\nᴍᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ and can appoint new admins."
         else:
             cant_promote = (
-                f"I ᴄᴀɴ'ᴛ ᴘʀᴏᴍᴏᴛᴇ/ᴅᴇᴍᴏᴛᴇ ᴘᴇᴏᴘʟᴇ ɪɴ <b>{update_chat_title}</b>!\n"
+                f"ɪ ᴄᴀɴ'ᴛ ᴘʀᴏᴍᴏᴛᴇ/ᴅᴇᴍᴏᴛᴇ ᴘᴇᴏᴘʟᴇ ɪɴ <b>{update_chat_title}</b>!\n"
                 f"ᴍᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴛʜᴇʀᴇ ᴀɴᴅ ʜᴀᴠᴇ ᴛʜᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ᴀᴘᴘᴏɪɴᴛ ɴᴇᴡ ᴀᴅᴍɪɴs."
             )
 
@@ -376,7 +374,7 @@ def can_restrict(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_restrict = "I ᴄᴀɴ'ᴛ ʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ʜᴇʀᴇ!\nᴍᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs."
+            cant_restrict = "ɪ ᴄᴀɴ'ᴛ ʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ʜᴇʀᴇ!\nᴍᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs."
         else:
             cant_restrict = f"ɪ ᴄᴀɴ'ᴛ ʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ɪɴ <b>{update_chat_title}</b>!\nᴍᴀᴋᴇ sᴜʀᴇ ɪ'ᴍ ᴀᴅᴍɪɴ ᴛʜᴇʀᴇ ᴀɴᴅ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs."
 
@@ -403,7 +401,7 @@ def user_can_promote(func):
         if (
             not (member.can_promote_members or member.status == "creator")
             and user not in DRAGONS
-            and user not in [1452219013]
+            and user not in [5513481385]
         ):
             if not update.callback_query:
                 update.effective_message.reply_text(no_rights)
@@ -425,7 +423,7 @@ def user_can_ban(func):
             not member.can_restrict_members
             and member.status != "creator"
             and user not in DRAGONS
-            and user not in [1452219013]
+            and user not in [5513481385]
         ):
             update.effective_message.reply_text(
                 "sᴏʀʀʏ sᴏɴ, ʙᴜᴛ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴡᴏʀᴛʜʏ ᴛᴏ ᴡɪᴇʟᴅ ᴛʜᴇ ʙᴀɴʜᴀᴍᴍᴇʀ.",
