@@ -178,7 +178,7 @@ else:
     try:
         OWNER_ID = int(Config.OWNER_ID)
     except ValueError:
-        raise Exception("ʏᴏᴜʀ OWNER_ID ᴠᴀʀɪᴀʙʟᴇ ɪs ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ɪɴᴛᴇɢᴇʀ.")
+        raise Exception("ʏᴏᴜʀ ᴏᴡɴᴇʀ_ɪᴅ ᴠᴀʀɪᴀʙʟᴇ ɪs ɴᴏᴛ ᴀ ᴠᴀʟɪᴅ ɪɴᴛᴇɢᴇʀ.")
 
     JOIN_LOGGER = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
@@ -272,14 +272,14 @@ finally:
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning(
-        "[EXON. ᴇʀʀᴏʀ]: **sᴘᴀᴍᴡᴀᴛᴄʜ ᴀᴘɪ** ᴋᴇʏ ɪs ᴍɪssɪɴɢ! ʀᴇᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏɴғɪɢ."
+        "[ʜᴏᴋᴀɢᴇ. ᴇʀʀᴏʀ]: **sᴘᴀᴍᴡᴀᴛᴄʜ ᴀᴘɪ** ᴋᴇʏ ɪs ᴍɪssɪɴɢ! ʀᴇᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴏɴғɪɢ."
     )
 else:
     try:
         sw = spamwatch.Client(SPAMWATCH_API)
     except:
         sw = None
-        LOGGER.warning("[HOKAGE : ᴇʀʀᴏʀ]: ᴄᴀɴ'ᴛ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ sᴘᴀᴍᴡᴀᴛᴄʜ!")
+        LOGGER.warning("[ʜᴏᴋᴀɢᴇ : ᴇʀʀᴏʀ]: ᴄᴀɴ'ᴛ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ sᴘᴀᴍᴡᴀᴛᴄʜ!")
 
 
 # Logger
@@ -288,9 +288,9 @@ print(
 )
 
 
-print("[HOKAGE]: ᴛᴇʟᴇɢʀᴀᴘʜ ɪɴsᴛᴀʟʟɪɴɢ")
+print("[ʜᴏᴋᴀɢᴇ]: ᴛᴇʟᴇɢʀᴀᴘʜ ɪɴsᴛᴀʟʟɪɴɢ")
 telegraph = Telegraph()
-print("[HOKAGE]: ᴛᴇʟᴇɢʀᴀᴘʜ ᴀᴄᴄᴏᴜɴᴛ ᴄʀᴇᴀᴛɪɴɢ")
+print("[ʜᴏᴋᴀɢᴇ]: ᴛᴇʟᴇɢʀᴀᴘʜ ᴀᴄᴄᴏᴜɴᴛ ᴄʀᴇᴀᴛɪɴɢ")
 telegraph.create_account(short_name="HOKAGE")
 # updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 
@@ -304,12 +304,12 @@ updater = tg.Updater(
 )
 
 
-print("[HOKAGE ]: ᴛᴇʟᴇᴛʜᴏɴ ᴄʟɪᴇɴᴛ sᴛᴀʀᴛɪɴɢ")
+print("[ʜᴏᴋᴀɢᴇ]: ᴛᴇʟᴇᴛʜᴏɴ ᴄʟɪᴇɴᴛ sᴛᴀʀᴛɪɴɢ")
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 
 
 dispatcher = updater.dispatcher
-print("[HOKAGE]: ᴘʏʀᴏɢʀᴀᴍ ᴄʟɪᴇɴᴛ sᴛᴀʀᴛɪɴɢ")
+print("[ʜᴏᴋᴀɢᴇ]: ᴘʏʀᴏɢʀᴀᴍ ᴄʟɪᴇɴᴛ sᴛᴀʀᴛɪɴɢ")
 session_name = TOKEN.split(":")[0]
 pgram = Client(
     session_name,
