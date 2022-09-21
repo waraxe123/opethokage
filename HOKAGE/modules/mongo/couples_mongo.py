@@ -1,4 +1,3 @@
-
 from HOKAGE import db
 
 coupledb = db.couple
