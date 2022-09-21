@@ -85,7 +85,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 HELP_MSG = "ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ~"
-START_MSG = "* I ᴀᴍ ᴡᴇʟʟ ᴀɴᴅ ᴀʟɪᴠᴇ ;)"
+START_MSG = "* ɪ ᴀᴍ ᴡᴇʟʟ ᴀɴᴅ ᴀʟɪᴠᴇ ;)"
 
 
 PM_START_TEX = """
