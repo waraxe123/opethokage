@@ -1,5 +1,3 @@
-
-
 from typing import List, Optional
 
 from telegram import Message, MessageEntity
@@ -80,7 +78,7 @@ def extract_user_and_text(
     except BadRequest as excp:
         if excp.message in ("User_id_invalid", "ᴄʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ"):
             message.reply_text(
-                "I ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʜᴀᴠᴇ ɪɴᴛᴇʀᴀᴄᴛᴇᴅ ᴡɪᴛʜ ᴛʜɪs ᴜsᴇʀ ʙᴇғᴏʀᴇ - ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ "
+                "ɪ ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʜᴀᴠᴇ ɪɴᴛᴇʀᴀᴄᴛᴇᴅ ᴡɪᴛʜ ᴛʜɪs ᴜsᴇʀ ʙᴇғᴏʀᴇ - ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ "
                 "ᴛʜᴇᴍ ᴛᴏ ɢɪᴠᴇ ᴍᴇ ᴄᴏɴᴛʀᴏʟ! (ʟɪᴋᴇ ᴀ ᴠᴏᴏᴅᴏᴏ ᴅᴏʟʟ, I ɴᴇᴇᴅ ᴀ ᴘɪᴇᴄᴇ ᴏғ ᴛʜᴇᴍ ᴛᴏ ʙᴇ ᴀʙʟᴇ "
                 "ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ᴄᴇʀᴛᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs...)",
             )
@@ -127,7 +125,7 @@ def extract_unt_fedban(
         user_id = get_user_id(user)
         if not user_id and not isinstance(user_id, int):
             message.reply_text(
-                "I ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴀᴛ ᴜsᴇʀ ɪɴ ᴍʏ ᴅʙ.  "
+                "ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴀᴛ ᴜsᴇʀ ɪɴ ᴍʏ ᴅʙ.  "
                 "ʏᴏᴜ'ʟʟ be ᴀʙʟᴇ ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ ᴡɪᴛʜ ᴛʜᴇᴍ ɪғ ʏᴏᴜ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴀᴛ ᴘᴇʀsᴏɴ's ᴍᴇssᴀɢᴇ ɪɴsᴛᴇᴀᴅ, ᴏʀ ғᴏʀᴡᴀʀᴅ ᴏɴᴇ ᴏғ ᴛʜᴀᴛ ᴜsᴇʀ's ᴍᴇssᴀɢᴇs.",
             )
             return None, None
@@ -155,7 +153,7 @@ def extract_unt_fedban(
             int,
         ):
             message.reply_text(
-                "I ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʜᴀᴠᴇ ɪɴᴛᴇʀᴀᴄᴛᴇᴅ ᴡɪᴛʜ ᴛʜɪs ᴜsᴇʀ ʙᴇғᴏʀᴇ "
+                "ɪ ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʜᴀᴠᴇ ɪɴᴛᴇʀᴀᴄᴛᴇᴅ ᴡɪᴛʜ ᴛʜɪs ᴜsᴇʀ ʙᴇғᴏʀᴇ "
                 "ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ᴀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇᴍ ᴛᴏ ɢɪᴠᴇ ᴍᴇ ᴄᴏɴᴛʀᴏʟ! "
                 "(ʟɪᴋᴇ ᴀ ᴠᴏᴏᴅᴏᴏ ᴅᴏʟʟ, ɪ ɴᴇᴇᴅ ᴀ ᴘɪᴇᴄᴇ of ᴛʜᴇᴍ ᴛᴏ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ᴄᴇʀᴛᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs...)",
             )
