@@ -6,6 +6,10 @@ import time
 import traceback
 from sys import version_info
 from typing import Optional
+from pyrogram import Client, idle, filters
+from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+from pyrogram.errors import MessageNotModified
 
 from pyrogram import __version__ as pver
 from pyrogram import idle
@@ -376,8 +380,8 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
             lol.delete()
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(
+            update.effective_message.reply_photo(START_IMG,
+                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
@@ -553,9 +557,9 @@ def help_button(update, context):
 #            reply_markup=InlineKeyboardMarkup(
 #                [
 #                    [
-#                        InlineKeyboardButton(text="⬅️", callback_data="HOKAGE_prev"),
+#                        InlineKeyboardButton(text="◁", callback_data="HOKAGE_prev"),
 #                        InlineKeyboardButton(text="⟲ ʙᴀᴄᴋ ⟳", callback_data="HOKAGE_back"),
-#                        InlineKeyboardButton(text="➡️", callback_data="HOKAGE_next"),
+#                        InlineKeyboardButton(text="▷", callback_data="HOKAGE_next"),
 #                    ]
 #                ]
 #            ),
@@ -802,7 +806,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1452219013 and DONATION_LINK:
+        if OWNER_ID != 5513481385 and DONATION_LINK:
             update.effective_message.reply_text(
                 f"ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ the ᴘᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
