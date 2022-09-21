@@ -1,5 +1,3 @@
-
-
 from typing import List, Optional, Union
 
 from telegram.ext import (
@@ -56,7 +54,7 @@ class HOKAGEHandler:
                         group,
                     )
                 LOGGER.debug(
-                    f"[ᴇxᴏɴᴄᴍᴅ] ʟᴏᴀᴅᴇᴅ ʜᴀɴᴅʟᴇʀ {command} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} ɪɴ ɢʀᴏᴜᴘ {group}"
+                    f"[ʜᴏᴋᴀɢᴇ ᴄᴍᴅ] ʟᴏᴀᴅᴇᴅ ʜᴀɴᴅʟᴇʀ {command} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} ɪɴ ɢʀᴏᴜᴘ {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -83,7 +81,7 @@ class HOKAGEHandler:
                         )
                     )
                 LOGGER.debug(
-                    f"[ExonCMD] Loaded handler {command} for function {func.__name__}"
+                    f"[ʜᴏᴋᴀɢᴇ ᴄᴍᴅ] Loaded handler {command} for function {func.__name__}"
                 )
 
             return func
@@ -112,7 +110,7 @@ class HOKAGEHandler:
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
                 LOGGER.debug(
-                    f"[ᴇxᴏɴᴍsɢ] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
+                    f"[ʜᴏᴋᴀɢᴇ ᴍsɢ] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -126,7 +124,7 @@ class HOKAGEHandler:
                         MessageHandler(pattern, func, run_async=run_async)
                     )
                 LOGGER.debug(
-                    f"[ᴇxᴏɴᴍsɢ] ʟᴏᴀᴅᴇᴅ ғɪʟᴛᴇʀ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
+                    f"[ʜᴏᴋᴀɢᴇ ᴍsɢ] ʟᴏᴀᴅᴇᴅ ғɪʟᴛᴇʀ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
                 )
 
             return func
@@ -141,7 +139,7 @@ class HOKAGEHandler:
                 )
             )
             LOGGER.debug(
-                f"[ᴇxᴏɴᴄᴀʟʟʙᴀᴄᴋ] ʟᴏᴀᴅᴇᴅ ᴄᴀʟʟʙᴀᴄᴋǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
+                f"[ʜᴏᴋᴀɢᴇ ᴄᴀʟʟʙᴀᴄᴋ] ʟᴏᴀᴅᴇᴅ ᴄᴀʟʟʙᴀᴄᴋǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__}"
             )
             return func
 
@@ -167,7 +165,7 @@ class HOKAGEHandler:
                 )
             )
             LOGGER.debug(
-                f"[ᴇxᴏɴɪɴʟɪɴᴇ] ʟᴏᴀᴅᴇᴅ ɪɴʟɪɴᴇǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} | ᴘᴀssᴇs ᴜsᴇʀ ᴅᴀᴛᴀ: {pass_user_data} | ᴘᴀssᴇs ᴄʜᴀᴛ ᴅᴀᴛᴀ: {pass_chat_data} | ᴄʜᴀᴛ ᴛʏᴘᴇs: {chat_types}"
+                f"[ʜᴏᴋᴀɢᴇ ɪɴʟɪɴᴇ] ʟᴏᴀᴅᴇᴅ ɪɴʟɪɴᴇǫᴜᴇʀʏ ʜᴀɴᴅʟᴇʀ ᴡɪᴛʜ ᴘᴀᴛᴛᴇʀɴ {pattern} ғᴏʀ ғᴜɴᴄᴛɪᴏɴ {func.__name__} | ᴘᴀssᴇs ᴜsᴇʀ ᴅᴀᴛᴀ: {pass_user_data} | ᴘᴀssᴇs ᴄʜᴀᴛ ᴅᴀᴛᴀ: {pass_chat_data} | ᴄʜᴀᴛ ᴛʏᴘᴇs: {chat_types}"
             )
             return func
 
