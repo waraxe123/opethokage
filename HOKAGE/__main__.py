@@ -380,8 +380,8 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
             lol.delete()
-            update.effective_message.reply_photo(START_IMG,
-                caption=PM_START_TEXT.format(
+            update.effective_message.repl_text(
+                    PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
