@@ -1,5 +1,3 @@
-
-
 import functools
 from enum import Enum
 
@@ -115,4 +113,4 @@ def anon_callback_handler1(upd: Update, _: CallbackContext):
                 dispatcher.bot.delete_message(chat_id, message_id)
             return cb[1](cb[0][0], cb[0][1])
     else:
-        callback.answer("ᴛʜɪs ɪsɴ'ᴛ ғᴏʀ ʏᴏᴜ\nᴊᴀ ʟᴇᴠᴅᴇ ᴋᴀᴍ ᴋᴀʀ ᴀᴘɴᴀ")
+        callback.answer("ᴛʜɪs ɪsɴ'ᴛ ғᴏʀ ʏᴏᴜ\nʙsᴅᴋ ᴋ ʟᴇᴠᴅᴇ ᴋᴀᴍ ᴋᴀʀ ᴀᴘɴᴀ")
