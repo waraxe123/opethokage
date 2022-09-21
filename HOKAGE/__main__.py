@@ -108,7 +108,7 @@ PM_START_TEXT = """
 ᴛʜᴇʀᴇꜱ ᴇᴠᴇɴ ᴍᴏʀᴇ! ᴛʜɪꜱ ɪꜱ ᴊᴜꜱᴛ ᴛʜᴇ ᴛɪᴘ ᴏꜰ ᴛʜᴇ ɪᴄᴇʙᴇʀɢ. ᴅᴏ ɴᴏᴛᴇ ɪ ɴᴇᴇᴅ
 ᴛᴏ ʙᴇ ᴘʀᴏᴍᴏᴛᴇᴅ ᴡɪᴛʜ ᴘʀᴏᴘᴇʀ ᴀᴅᴍɪɴ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴛᴏ ꜰᴜɴᴄᴛɪᴏɴ ᴘʀᴏᴘᴇʀʟʏ. 
 ᴇʟꜱᴇ ɪ ᴡᴏɴ'ᴛ ʙᴇ ᴀʙʟᴇ ᴛᴏ ꜰᴜɴᴄᴛɪᴏɴ ᴀꜱ ꜱᴀɪᴅ.
-───────────────────────
+━━━━━━━━━━━━━━━━━━━━━━━
 ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ!
 """
 
@@ -126,15 +126,15 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text=" ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ 🌐", url="https://github.com/TEAM-ABG/ExonRobot"
+            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
         ),
     ],
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 🥂", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
-            text="ᴜᴘᴅᴀᴛᴇs 🏃‍♂️", url=f"https://t.me/{UPDATES_CHANNEL}"
+            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
         ),
     ],
 ]
@@ -143,17 +143,118 @@ buttons = [
 HELP_STRINGS = """
 ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs ʜᴏᴋᴀɢᴇ.
 ʜᴀᴠᴇ ᴀ ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ғᴏʀ ᴀɴ ɪᴅᴇᴀ ᴏғ sᴏᴍᴇ ᴏғ ᴛʜᴇ ᴛʜɪɴɢs ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ
-───────────────────────
+━━━━━━━━━━━━━━━━━━━━━━━
 *ᴍᴀɪɴ* ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ:
 ❏ /help: PM's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
 ❏ /donate: ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏɴ ʜᴏᴡ ᴛᴏ ᴅᴏɴᴀᴛᴇ!
 ❏ /settings:
    ↣ ɪɴ ᴘᴍ: ᴡɪʟʟ sᴇɴᴅ ʏᴏᴜ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ғᴏʀ ᴀʟʟ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs.
    ↣ ɪɴ ᴀ ɢʀᴏᴜᴘ: ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ  sᴇᴛᴛɪɴɢs.
-───────────────────────
+━━━━━━━━━━━━━━━━━━━━━━━
 """
 
+INFO_ABOUT = """
+━━━━━━━━━━━━━━━━━━━━━━━
+ɪ'ᴍ ᴀ ᴘᴀʀᴛ ᴏғ ᴛᴇᴄʜ ǫᴜᴀʀᴅ
+ʜᴀᴠᴇ ᴀ ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ғᴏʀ ᴀɴ ɪᴅᴇᴀ ᴏғ sᴏᴍᴇ ᴏғ ᴛʜᴇ ᴛʜɪɴɢs ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ
+━━━━━━━━━━━━━━━━━━━━━━━
+ʜᴇʀᴇ ɪs ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏғ ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜǫᴜᴀʀᴅ
+"""
+
+OTHER_TEXT = """
+ʜᴇʀᴇ ᴀʟʟ ᴍʏ ʟᴇɢᴇɴᴅᴀʀʏ ʙᴏᴛs
+◈ ʙᴀss ʙᴏᴏsᴛᴇᴅ ᴍᴜsɪᴄ ʙᴏᴛ
+◈ ᴏᴜʀ ʙᴏᴛs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ
+◈ ᴍᴀɴᴀɢᴇᴍɴᴇɴᴛ ʙᴏᴛ ғᴜʟʟʏ ʙᴀsᴇᴅ ᴀɴɪᴍᴇᴅ
+ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴀʟsᴏ ɴᴇᴛᴡᴏʀᴋ
+"""
+
+
 DONATE_STRING = """➢ ᴊᴜsᴛ sᴜᴘᴘᴏʀᴛ ᴜs, ᴡᴇ ᴡɪʟʟ ʙᴇ ᴍᴏʀᴇ ᴛʜᴀɴ ʜᴀᴘᴘʏ"""
+
+
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
+    if query.data=="about_info":
+        fucker = [
+            [
+                InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mr_DiSasTer_XD"),
+                InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/kakashi_bots_updates"),
+            ],
+            [
+                InlineKeyboardButton("🫖 ʀᴇᴘᴏsɪᴛᴏʀʏ", url=f"https://github.com/Sumit9969/HokageRobot"),
+                InlineKeyboardButton("☘ ᴏᴛʜᴇʀ ʙᴏᴛs", callback_data="other_bots"),
+            ],
+            [
+                InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home"),
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(fucker)
+        try:
+            await query.edit_message_text(
+                INFO_ABOUT,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+
+    elif query.data=="other_bots":
+        bsdk = [
+            [
+                InlineKeyboardButton("💭 ᴍᴜsɪᴄ ʙᴏᴛ", url=f"https://t.me/AnonMusicBot"),
+                InlineKeyboardButton("⛓ ᴍᴜsɪᴄ ᴄʟᴏɴᴇ", url=f"https://t.me/MusicsCloneBot"),
+            ],
+            [
+                InlineKeyboardButton("📚 ʙᴏᴛs ʟɪsᴛ", url="https://t.me/TechQuardBot"),
+                InlineKeyboardButton("🌽 ʏᴏᴜᴛᴜʙᴇ ", url="https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"),
+            ],
+            [
+                InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="about_info"),
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(bsdk)
+        try:
+            await query.edit_message_text(
+                OTHER_TEXT.format(query.from_user.first_name, query.from_user.id),
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+
+    elif query.data=="home":
+        bsdk = [
+    [
+        InlineKeyboardButton(
+            text="➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"
+        )
+    ],
+    [
+        InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(
+            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
+        ),
+    ],
+]
+
+        reply_markup = InlineKeyboardMarkup(bsdk)
+        try:
+            await query.edit_message_text(
+                PM_START_TEXT.format(query.from_user.first_name, query.from_user.id),
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+
+
+
+
 
 
 IMPORTED = {}
