@@ -1,5 +1,3 @@
-
-
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from HOKAGE import DRAGONS
