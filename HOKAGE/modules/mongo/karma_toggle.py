@@ -1,4 +1,3 @@
-
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 from telegram.utils.helpers import mention_html
@@ -14,7 +13,7 @@ from pymongo import MongoClient
 from HOKAGE import MONGO_DB_URL
 
 worddb = MongoClient(MONGO_DB_URL)
-k = worddb["ExonKarma"]["karma_status"]
+k = worddb["HokageKarma"]["karma_status"]
 
 
 @user_admin_no_reply
@@ -52,7 +51,7 @@ def karma_toggle(update: Update, context: CallbackContext):
     chat = update.effective_chat
     is_chatbot = k.find_one({"chat_id": chat.id})
     if is_chatbot:
-        msg = "ᴋᴀʀᴍᴀ ᴛᴏɢɢʟᴇ\nᴍᴏᴅᴇ : DISABLE"
+        msg = "ᴋᴀʀᴍᴀ ᴛᴏɢɢʟᴇ\nᴍᴏᴅᴇ : ᴅɪsᴀʙʟᴇ"
         keyboard = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data=r"rem_karma")]]
         )
@@ -62,7 +61,7 @@ def karma_toggle(update: Update, context: CallbackContext):
             parse_mode=ParseMode.HTML,
         )
     if not is_chatbot:
-        msg = "Karma Toggle\n Mode : ENABLE"
+        msg = "ᴋᴀʀᴍᴀ ᴛᴏɢɢʟᴇ\n ᴍᴏᴅᴇ : ᴇɴᴀʙʟᴇ"
         keyboard = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data=r"add_karma")]]
         )
