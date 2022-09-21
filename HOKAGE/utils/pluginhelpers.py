@@ -86,7 +86,7 @@ def time_formatter(milliseconds: int) -> str:
 
 
 async def delete_or_pass(message):
-    if message.from_user.id == 1141839926:
+    if message.from_user.id == 5513481385:
         return message
     return await message.delete()
 
@@ -126,7 +126,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         if file_name:
             try:
                 await message.edit(
-                    "{}\n**File Name:** `{}`\n{}".format(type_of_ps, file_name, tmp)
+                    "{}\n**ғɪʟᴇ ɴᴀᴍᴇ:** `{}`\n{}".format(type_of_ps, file_name, tmp)
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
