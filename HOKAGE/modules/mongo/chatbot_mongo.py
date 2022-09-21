@@ -1,4 +1,3 @@
-
 from HOKAGE import mongodb as db_x
 
 HOKAGE = db_x["CHATBOT"]
