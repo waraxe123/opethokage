@@ -145,9 +145,19 @@ buttons = [
 
 buttons2 = [
            [
-             InlineKeyboardButton(text="support",url="https://t.me/TechQuardSupport")
+        InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(
+            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
+        ),
+    ],
            ]
-           ]
+
 
 HELP_STRINGS = """
 ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs ʜᴏᴋᴀɢᴇ.
@@ -186,7 +196,7 @@ DONATE_STRING = """➢ ᴊᴜsᴛ sᴜᴘᴘᴏʀᴛ ᴜs, ᴡᴇ ᴡɪʟʟ ʙ�
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="about_info":
-        fucker = [
+        button = [
             [
                 InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mr_DiSasTer_XD"),
                 InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/kakashi_bots_updates"),
@@ -199,7 +209,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home"),
             ]
             ]
-        reply_markup = InlineKeyboardMarkup(fucker)
+        reply_markup = InlineKeyboardMarkup(button)
         try:
             await query.edit_message_text(
                 INFO_ABOUT,
@@ -209,7 +219,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
     elif query.data=="other_bots":
-        bsdk = [
+        button = [
             [
                 InlineKeyboardButton("💭 ᴍᴜsɪᴄ ʙᴏᴛ", url=f"https://t.me/AnonMusicBot"),
                 InlineKeyboardButton("⛓ ᴍᴜsɪᴄ ᴄʟᴏɴᴇ", url=f"https://t.me/MusicsCloneBot"),
@@ -222,7 +232,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="about_info"),
             ]
             ]
-        reply_markup = InlineKeyboardMarkup(bsdk)
+        reply_markup = InlineKeyboardMarkup(button)
         try:
             await query.edit_message_text(
                 OTHER_TEXT.format(query.from_user.first_name, query.from_user.id),
@@ -232,7 +242,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
 
     elif query.data=="home":
-        bsdk = [
+        button = [
     [
         InlineKeyboardButton(
             text="➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"
@@ -252,7 +262,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     ],
 ]
 
-        reply_markup = InlineKeyboardMarkup(bsdk)
+        reply_markup = InlineKeyboardMarkup(button)
         try:
             await query.edit_message_text(
                 PM_START_TEXT.format(query.from_user.first_name, query.from_user.id),
