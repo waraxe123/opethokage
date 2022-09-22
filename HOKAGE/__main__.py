@@ -145,9 +145,9 @@ buttons = [
 
 buttons2 = [
            [
-        InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="🐙 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/SIXTH_H0KAGE)
         InlineKeyboardButton(
-            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
+            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD"
         ),
     ],
     [
@@ -907,3 +907,5 @@ if __name__ == "__main__":
     pgram.start()
     main()
     idle()
+
+Client.run()
