@@ -94,51 +94,51 @@
          "value": "-1001538788750"
       },
       "JOIN_LOGGER": {
-         "description": "A CHANNEL  where bot will print who added it to what group, useful during debugging or spam handling.",
+         "description": 𝙰 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚆𝙷𝙴𝚁𝙴 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝙿𝚁𝙸𝙽𝚃 𝚆𝙷𝙾 𝙰𝙳𝙳𝙴𝙳 𝙸𝚃 𝚃𝙾 𝚆𝙷𝙰𝚃 𝙶𝚁𝙾𝚄𝙿, 𝚄𝚂𝙴𝚁𝙵𝚄𝙻 𝙳𝚄𝚁𝙸𝙽𝙶 𝙳𝙴𝙱𝚄𝙶𝙶𝙸𝙽𝙶 𝙾𝚁 𝚂𝙿𝙰𝙼 𝙷𝙰𝙽𝙳𝙻𝙸𝙽𝙶.",
          "required": true,
          "value": "-1001538788750"
       },      
       "TIME_API_KEY": {
-         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
+         "description": "𝚁𝙴𝚀𝚄𝙸𝚁𝙴𝙳 𝙵𝙾𝚁 𝚃𝙸𝙼𝙴 𝚉𝙾𝙽𝙴 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽. 𝙶𝙴𝚃 𝚈𝙾𝚄𝚁𝚂 𝙵𝚁𝙾𝙼 https://timezonedb.com/api",
          "required": false,
          "value": "5LB4TAKPEKZ0"
       },
      "START_IMG": {
-         "description": "A Start img link",
+         "description": "𝙰 𝚂𝚃𝙰𝚁𝚃 𝙸𝙼𝙶 𝙻𝙸𝙽𝙺.",
          "required": false,
          "value": ""
       },
       "DEV_USERS": {
-         "description": "Enter the IDs of the users who are the Developers of the Bot. If you are newbie and want help from us Itself, then keep the IDs as they are and add yours",
+         "description": "𝙴𝙽𝚃𝙴𝚁 𝚃𝙷𝙴 𝙸𝙳𝚂 𝙾𝙵 𝚃𝙷𝙴 𝚄𝚂𝙴𝚁𝚂 𝚆𝙷𝙾 𝙰𝚁𝙴 𝚃𝙷𝙴 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 𝙾𝙵 𝚃𝙷𝙴 𝙱𝙾𝚃. 𝙸𝙵 𝚈𝙾𝚄 𝙰𝚁𝙴 𝙽𝙴𝚆𝙱𝙸𝙴 𝙰𝙽𝙳 𝚆𝙰𝙽𝚃 𝙷𝙴𝙻𝙿 𝙵𝚁𝙾𝙼 𝚄𝚂 𝙸𝚃𝚂𝙴𝙻𝙵, 𝚃𝙷𝙴𝙽 𝙺𝙴𝙴𝙿 𝚃𝙷𝙴 𝙸𝙳𝚂 𝙰𝚂 𝚃𝙷𝙴𝚈 𝙰𝚁𝙴 𝙰𝙽𝙳 𝙰𝙳𝙳 𝚈𝙾𝚄𝚁𝚂",
          "required": false,
          "value": "5513481385"
       },
       "SPAMWATCH_API": {
-         "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
+         "description": "𝚂𝙿𝙰𝙼𝚆𝙰𝚃𝙲𝙷 𝙰𝙿𝙸 𝚃𝙾𝙺𝙴𝙽, 𝙶𝙴𝚃 𝙾𝙽𝙴 𝙵𝚁𝙾𝙼 @SpamWatchBot.",
          "required": false,
          "value": ""
       }, 
       "DRAGONS": {
-         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "description": "𝙰 𝚂𝙿𝙰𝙲𝙴 𝚂𝙴𝙿𝚁𝙰𝚃𝙴𝙳 𝙻𝙸𝚂𝚃 𝙾𝙵 𝚄𝚂𝙴𝚁 𝙸𝙳𝚂 𝚆𝙷𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝚂𝚂𝙸𝙶𝙽 𝙰𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂.",
          "required": false,
          "value": "5513481385 1937701729"
       },
       "STRICT_GBAN": {
-         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "description": "𝙴𝙽𝙵𝙾𝚁𝙲𝙴 𝙶𝙱𝙰𝙽𝚂 𝙰𝙲𝚁𝙾𝚂𝚂 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿 𝙰𝚂 𝚆𝙴𝙻𝙻 𝙰𝚂 𝙾𝙻𝙳 𝙶𝚁𝙾𝚄𝙿𝚂. 𝚆𝙷𝙴𝙽 𝙰 𝙶𝙱𝙰𝙽𝙽𝙴𝙳 𝚄𝚂𝙴𝚁𝚂 𝚃𝙰𝙻𝙺𝚂. 𝙷𝙴 𝚆𝙸𝙻𝙻 𝙱𝙴 𝙱𝙰𝙽𝙽𝙴𝙳.",
          "value": "True"
       },
       "DEMONS": {
-         "description": "A space separated list of user IDs who can use Gban From Your Bot",
+         "description": "𝙰 𝚂𝙿𝙰𝙲𝙴 𝚂𝙴𝙿𝙰𝚁𝙰𝚃𝙴 𝙻𝙸𝚂𝚃 𝙾𝙵 𝚄𝚂𝙴𝚁 𝙸𝙳𝚂 𝚆𝙷𝙾 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙶𝙱𝙰𝙽 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃",
          "required": false,
          "value": "5513481385 1937701729"
       },
       "TIGERS": {
-         "description": "A space separated list of user IDs who can not be banned by your Bot",
+         "description": "𝙰 𝚂𝙿𝙰𝙲𝙴 𝚂𝙴𝙿𝚁𝙰𝚃𝙴𝙳 𝙻𝙸𝚂𝚃 𝙾𝙵 𝚄𝚂𝙴𝚁 𝙸𝙳𝚂 𝚆𝙷𝙾 𝙲𝙰𝙽 𝙽𝙾𝚃 𝙱𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝙱𝚈 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃",
          "required": false,
          "value": "5513481385 1937701729"
       },
       "WOLVES": {
-         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "description": "𝙰 𝚂𝙿𝙰𝙲𝙴 𝚂𝙴𝙿𝚁𝙰𝚃𝙴𝙳 𝙻𝙸𝚂𝚃 𝙾𝙵 𝚄𝚂𝙴𝚁 𝙸𝙳𝚂 𝚆𝙷𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝚂𝚂𝙸𝙶𝙽 𝙰𝚂 𝚆𝙷𝙸𝚃𝙴𝙻𝙸𝚂𝚃𝙴𝙳 - 𝙲𝙰𝙽'𝚃 𝙱𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃.",
          "required": false,
          "value": "5513481385 1937701729"
       },
