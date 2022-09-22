@@ -10,7 +10,7 @@ from pyrogram import Client, idle, filters
 from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import MessageNotModified
-
+from pyrogram import Client, filters
 from pyrogram import __version__ as pver
 from pyrogram import idle
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
