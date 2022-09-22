@@ -535,10 +535,10 @@ def help_button(update, context):
 
 
 
-#def HOKAGE_callback_data(update, context):
+#def Hokage_callback_data(update, context):
 #    query = update.callback_query
 #    uptime = get_readable_time((time.time() - StartTime))
-#    if query.data == "HOKAGE_":
+#    if query.data == "Hokage_":
 #        query.message.edit_text(
        #     text="""CallBackQueriesData Here""",
  #           parse_mode=ParseMode.MARKDOWN,
@@ -546,14 +546,14 @@ def help_button(update, context):
 #            reply_markup=InlineKeyboardMarkup(
 #                [
 #                    [
-#                        InlineKeyboardButton(text="◁", callback_data="HOKAGE_prev"),
-#                        InlineKeyboardButton(text="⟲ ʙᴀᴄᴋ ⟳", callback_data="HOKAGE_back"),
-#                        InlineKeyboardButton(text="▷", callback_data="HOKAGE_next"),
+#                        InlineKeyboardButton(text="◁", callback_data="Hokage_prev"),
+#                        InlineKeyboardButton(text="⟲ ʙᴀᴄᴋ ⟳", callback_data="Hokage_back"),
+#                        InlineKeyboardButton(text="▷", callback_data="Hokage_next"),
 #                    ]
 #                ]
 #            ),
  #       )
- #   elif query.data == "HOKAGE_back":
+ #   elif query.data == "Hokage_back":
 #        first_name = update.effective_user.first_name
 #        uptime = get_readable_time((time.time() - StartTime))
  #       query.message.edit_text(
