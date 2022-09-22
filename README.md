@@ -6,7 +6,7 @@
 
 >
 
-_**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ](https://telegram.dog/HokageRobot)**_
+- ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ](https://telegram.dog/HokageRobot)
 ━━━━━━━━━━━━━
 
 <p align="center">
