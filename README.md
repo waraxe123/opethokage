@@ -1,4 +1,4 @@
-━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
     ──「 ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ 」──
@@ -7,7 +7,7 @@
 >
 
 - ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ](https://telegram.dog/HokageRobot)
-━━━━━━━━━━━━━
+
 
 <p align="center">
 <a href="https://github.com/https://github.com/Sumit9969/HokageRobot/stargazers"><img src="https://img.shields.io/github/stars/Sumit9969/HokageRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
@@ -23,7 +23,7 @@
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://telegra.ph/file/7bd111132fce009e4605e.jpg">
+  <img src="https://te.legra.ph/file/36f0f3ceac2977fdf92c4.jpg">
 </p>
 
 <p align="center">
