@@ -535,39 +535,23 @@ def help_button(update, context):
 
 
 
-#def Hokage_callback_data(update, context):
-#    query = update.callback_query
-#    uptime = get_readable_time((time.time() - StartTime))
-#    if query.data == "Hokage_":
-#        query.message.edit_text(
-       #     text="""CallBackQueriesData Here""",
- #           parse_mode=ParseMode.MARKDOWN,
-#            disable_web_page_preview=True,
-#            reply_markup=InlineKeyboardMarkup(
-#                [
-#                    [
-#                        InlineKeyboardButton(text="◁", callback_data="Hokage_prev"),
-#                        InlineKeyboardButton(text="⟲ ʙᴀᴄᴋ ⟳", callback_data="Hokage_back"),
-#                        InlineKeyboardButton(text="▷", callback_data="Hokage_next"),
-#                    ]
-#                ]
-#            ),
- #       )
- #   elif query.data == "Hokage_back":
-#        first_name = update.effective_user.first_name
-#        uptime = get_readable_time((time.time() - StartTime))
- #       query.message.edit_text(
- #           PM_START_TEXT.format(
-#                escape_markdown(first_name),
-#                escape_markdown(uptime),
-#                sql.num_users(),
-#                sql.num_chats(),
-#            ),
-#            reply_markup=InlineKeyboardMarkup(buttons),
-#            parse_mode=ParseMode.MARKDOWN,
-#            timeout=60,
-#            disable_web_page_preview=False,
-#        )
+def Hokage_callback_data(update, context):
+    query = update.callback_query
+    if query.data == "Hokage_back":
+        first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
+        query.message.edit_text(
+            PM_START_TEXT.format(
+                escape_markdown(first_name),
+                escape_markdown(uptime),
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
+        )
 
 
 @typing_action
