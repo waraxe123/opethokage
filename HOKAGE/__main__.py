@@ -420,7 +420,7 @@ def start(update: Update, context: CallbackContext):
                             url=f"https://t.me/{OWNER_USERNAME}",
                         ),
                          text="ʏᴏᴜᴛᴜʙᴇ",
-                            url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw",
+                            url="https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw",
                         ),
                         InlineKeyboardButton(
                             text="⟲ ᴄʟᴏsᴇ ⟳",
