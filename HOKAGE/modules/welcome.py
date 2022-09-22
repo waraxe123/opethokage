@@ -1,26 +1,3 @@
-"""
-MIT License
-
-Copyright (c) 2022 Aʙɪsʜɴᴏɪ
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 import html
 import random
 import re
@@ -139,7 +116,7 @@ def send(update, message, keyboard, backup_message):
                 markdown_parser(
                     (
                         backup_message
-                        + "\nNote: ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴜᴛᴛᴏɴs ᴡʜɪᴄʜ ᴜsᴇ ᴜʀʟ ᴘʀᴏᴛᴏᴄᴏʟs ᴛʜᴀᴛ ᴀʀᴇ ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ "
+                        + "\ɴᴏᴛᴇ: ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴜᴛᴛᴏɴs ᴡʜɪᴄʜ ᴜsᴇ ᴜʀʟ ᴘʀᴏᴛᴏᴄᴏʟs ᴛʜᴀᴛ ᴀʀᴇ ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ "
                         "ᴛᴇʟᴇɢʀᴀᴍ. ᴘʟᴇᴀsᴇ ᴜᴘᴅᴀᴛᴇ. "
                     )
                 ),
@@ -278,7 +255,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴄʜᴇᴄᴋᴏᴜᴛ @AbishnoiMF ғᴏʀ ᴍᴏʀᴇ.",
+                    "ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴍʏ sᴡᴇᴇᴛʜᴇᴀʀᴛ \n\n ᴛᴜ ʜɪ ᴍᴇʀɪ ᴊᴀᴀɴ ʜᴀɪ.",
                     reply_to_message_id=reply,
                 )
                 continue
