@@ -69,14 +69,14 @@ class Config(object):
     TEMP_DOWNLOAD_DIRECTORY = "./"
     HEROKU_APP_NAME = ""
     HEROKU_API_KEY = ""
-    REM_BG_API_KEY = "LSdLgCceYz8vNqFgJVzrkDgR"
+    REM_BG_API_KEY = ""
     LASTFM_API_KEY = ""
     CF_API_KEY = ""
     BL_CHATS = []
     MONGO_PORT = "27017"
     MONGO_DB = "Hokage"
     PHOTO = ""
-    TIME_API_KEY = "5LB4TAKPEKZ0"
+    TIME_API_KEY = ""
     INFOPIC = False
 
 
