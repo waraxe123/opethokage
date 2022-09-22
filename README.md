@@ -48,7 +48,8 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ʜᴏᴋᴀɢᴇ ʀ
 <h3 align="center">
     ─「 ʀᴇᴘᴏ ʙᴀsᴇ 」─
 </h3>
-- <b>[ᴇxᴏɴ ʀᴏʙᴏᴛ](https://github.com/AnonymousR1025)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://github.com/AnonymousR1025/FallenRobot) </b>
+
+- <b>[ᴇxᴏɴ ʀᴏʙᴏᴛ](https://github.com/TEAM-ABG/ExonRobot)  </b>
 - sᴘᴇᴄɪᴀʟʟʏ ᴛʜᴀɴᴋs ғᴏʀ ᴀʙɪsʜɴᴏɪ 
 
 ━━━━━━━━━━━━━━━━━━━━
