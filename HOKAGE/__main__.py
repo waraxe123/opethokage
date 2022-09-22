@@ -392,47 +392,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
                 disable_web_page_preview=False,
             )
-    else:
-        update.effective_message.reply_photo(
-            START_IMG,
-            caption="ʜᴇʏ `{}`,\n\nɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n➺ᴜᴘᴛɪᴍᴇ: `{}` \n➺ᴜsᴇʀs: `{}` \n➺ᴄʜᴀᴛs: `{}` ".format(
-                usr.first_name,
-                uptime,
-                sql.num_users(),
-                sql.num_chats(),
-            ),
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="ꜱᴜᴘᴘᴏʀᴛ",
-                            url=f"https://t.me/{SUPPORT_CHAT}",
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇꜱ",
-                            url=f"https://t.me/{UPDATES_CHANNEL}",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴘᴇʀ",
-                            url=f"https://t.me/{OWNER_USERNAME}",
-                        ),
-                         text="ʏᴏᴜᴛᴜʙᴇ",
-                            url="https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw",
-                        ),
-                        InlineKeyboardButton(
-                            text="⟲ ᴄʟᴏsᴇ ⟳",
-                            callback_data="close_",
-                        ),
-                    ],
-                ]
-            ),
-        )
-
-
-
+    
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
