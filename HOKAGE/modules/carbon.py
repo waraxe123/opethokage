@@ -49,7 +49,7 @@ async def carbon_func(_, message):
 @capture_err
 async def help(client: Client, message: Message):
     get_me = await client.get_me()
-    self.username = get_me.username
+    USERNAME = get_me.username
     buttons =  [
            [
         InlineKeyboardButton(text="🐙 ʀᴇᴘᴏsɪᴛᴏʀʏ", url="https://github.com/Sumit9969/HokageRobot"),
