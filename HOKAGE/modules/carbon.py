@@ -1,8 +1,8 @@
 import asyncio
 from io import BytesIO
-
-from pyrogram import filters
-
+from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+from pyrogram.errors import MessageNotModified
 from HOKAGE import aiohttpsession as aiosession
 from HOKAGE import pgram
 from pyrogram import Client, filters
