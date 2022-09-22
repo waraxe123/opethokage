@@ -23,7 +23,7 @@
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://te.legra.ph/file/36f0f3ceac2977fdf92c4.jpg">
+  <img src="https://te.legra.ph/file/34a7c64d4e460e4c5ae7e.jpg">
 </p>
 
 <p align="center">
