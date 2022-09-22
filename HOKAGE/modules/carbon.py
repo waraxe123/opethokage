@@ -5,7 +5,7 @@ from pyrogram import filters
 
 from HOKAGE import aiohttpsession as aiosession
 from HOKAGE import pgram
-from HOKAGE.events import register
+from pyrogram import Client, filters
 from HOKAGE.utils.errors import capture_err
 
 
@@ -44,8 +44,9 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-@register(pattern="^/repo$")
-@Client.on_message(filters.command(["help"]) & filters.private)
+
+@pgram.on_message(filters.command("repo"))
+@capture_err
 async def help(client: Client, message: Message):
     get_me = await client.get_me()
     self.username = get_me.username
