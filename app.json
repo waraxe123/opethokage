@@ -57,7 +57,7 @@
       "REDIS_URL": {
          "description": "Your Redis URL, Get one from redislabs.com",
          "required": true,
-         "value": "redis://loda:GuKhao123_@redis-12276.c275.us-east-1-4.ec2.cloud.redislabs.com:12276/Madharjoot"
+         "value": ""
       }, 
      "REM_BG_API_KEY": {
          "description": "From:- https://www.remove.bg/",
@@ -67,7 +67,7 @@
       "OWNER_ID": {
          "description": "Your Telegram User ID as an integer.",
          "required": true,
-         "value": ""
+         "value": "5513481385"
       },
       "BOT_ID": {
          "description": "Your Telegram Bot ID.",
@@ -91,12 +91,12 @@
       "EVENT_LOGS": {
          "description": "Event logs CHANNEL to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": ""
+         "value": "-1001538788750"
       },
       "JOIN_LOGGER": {
          "description": "A CHANNEL  where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": ""
+         "value": "-1001538788750"
       },      
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
@@ -106,12 +106,12 @@
      "START_IMG": {
          "description": "A Start img link",
          "required": false,
-         "value": "https://telegra.ph/file/0191f2041ae33e11c1267.jpg"
+         "value": ""
       },
       "DEV_USERS": {
          "description": "Enter the IDs of the users who are the Developers of the Bot. If you are newbie and want help from us Itself, then keep the IDs as they are and add yours",
          "required": false,
-         "value": ""
+         "value": "5513481385"
       },
       "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -121,7 +121,7 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": ""
+         "value": "5513481385 1937701729"
       },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -130,17 +130,17 @@
       "DEMONS": {
          "description": "A space separated list of user IDs who can use Gban From Your Bot",
          "required": false,
-         "value": ""
+         "value": "5513481385 1937701729"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who can not be banned by your Bot",
          "required": false,
-         "value": ""
+         "value": "5513481385 1937701729"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "5513481385 1937701729"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -159,12 +159,12 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/Abishnoi1M"
+         "value": "https://t.me/TechQuardSupport"
       },
       "MONGO_DB_URL": {
          "description": "Your Mongo DB URI",
          "required": true,
-         "value": "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority"
+         "value": ""
       },
       "HEROKU_API_KEY": {
          "description": "Your Heroku API Key from heroku profile",
@@ -194,7 +194,7 @@
       "ERROR_LOGS": {
          "description": "The ID of the Group where the bot will spam with shitty errors and techy stuff",
          "required": true,
-         "value": ""
+         "value": "-1001538788750"
       }
    },   
       "buildpacks": [
