@@ -1,6 +1,6 @@
 {
-      "name": "Hokage ROBOT",
-      "description": "A Telegram group management bot.",
+      "name": "ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ",
+      "description": "ᴀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.",
       "logo": "https://telegra.ph/file/550a1524598af2578cbf3.jpg", 
       "keywords": [
          "telegram",
@@ -20,76 +20,76 @@
    ],
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Can be obtained from https://telegram.dog/BotFather/",
+         "description": "𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚃𝙾𝙺𝙴𝙽 𝙲𝙰𝙽 𝙱𝙴 𝙾𝙱𝚃𝙰𝙸𝙽𝙴𝙳 𝙵𝚁𝙾𝙼 https://telegram.dog/BotFather/",
          "required": true,
-         "value": "YOUR BOT_TOKEN"
+         "value": ""
       },
       "API_ID": {
-         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "description": "𝙶𝙴𝚃 𝙰𝙿𝙸 𝙸𝙳 𝙵𝚁𝙾𝙼 my.telegram.org, 𝚄𝚂𝙴𝙳 𝙵𝙾𝚁 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝙱𝙰𝚂𝙴𝙳 𝙼𝙾𝙳𝚄𝙻𝙴𝚂.",
          "required": true,
          "value": ""
       },
       "API_HASH": {
-         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "description": "𝙶𝙴𝚃 𝙰𝙿𝙸 𝙷𝙰𝚂𝙷 𝙵𝚁𝙾𝙼 my.telegram.org, 𝚄𝚂𝙴𝙳 𝙵𝙾𝚁 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝙱𝙰𝚂𝙴𝙳 𝙼𝙾𝙳𝚄𝙻𝙴𝚂.",
          "required": true,
          "value": ""
       },
       "APP_ID": {
-         "description": "Same as API_ID, BUT  2nd idi",
+         "description": "𝚂𝙰𝙼𝙴 𝙰𝚂 𝙰𝙿𝙸 𝙸𝙳 , 𝙱𝚄𝚃 2𝙽𝙳 𝙸𝙳.",
          "required": true,
          "value": ""
       },
       "APP_HASH": {
-         "description": "Same as API_HASH, but 2nd id",
+         "description": "𝚂𝙰𝙼𝙴 𝙰𝚂 𝙰𝙿𝙸 𝙷𝙰𝚂𝙷 , 𝙱𝚄𝚃 2𝙽𝙳 𝙸𝙳.",
          "required": true,
          "value": ""
       },  
       "DATABASE_URL": {
-         "description": "Your Postgres SQL DataBase URI, Get one from https://customer.elephantsql.com/login",
+         "description": "𝚈𝙾𝚄𝚁 𝙿𝙾𝚂𝚃𝙶𝚁𝙴𝚂 𝚂𝚀𝙻 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚄𝚁𝙻, 𝙶𝙴𝚃 𝙾𝙽𝙴 𝙵𝚁𝙾𝙼 https://customer.elephantsql.com/login",
          "required": true,
          "value": ""
       }, 
       "DATABASE_URL2": {
-         "description": "Your one extra Mongo DataBase URI, Get one from mongodb.com",
+         "description": "𝚈𝙾𝚄𝚁 𝙾𝙽𝙴 𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙽𝙶𝙾 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚄𝚁𝙻, 𝙶𝙴𝚈 𝙾𝙽𝙴 𝙵𝚁𝙾𝙼 mongodb.com",
          "required": true,
          "value": "mongodb+srv://HOKAGEMONGO:HOKAGETESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority"
       }, 
       "REDIS_URL": {
-         "description": "Your Redis URL, Get one from redislabs.com",
+         "description": "𝚈𝙾𝚄𝚁 𝚁𝙴𝙳𝙸𝚂 𝚄𝚁𝙻, 𝙶𝙴𝚃 𝙾𝙽𝙴 𝙵𝚁𝙾𝙼 redislabs.com",
          "required": true,
          "value": ""
       }, 
      "REM_BG_API_KEY": {
-         "description": "From:- https://www.remove.bg/",
+         "description": "𝙵𝚁𝙾𝙼:- https://www.remove.bg/",
          "required": false,
          "value": "LSdLgCceYz8vNqFgJVzrkDgR"
       }, 
       "OWNER_ID": {
-         "description": "Your Telegram User ID as an integer.",
+         "description": "𝚈𝙾𝚄𝚁 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝚄𝚂𝙴𝚁 𝙸𝙳 𝙰𝚂 𝙰 𝙸𝙽𝚃𝙴𝙶𝙴𝚁.",
          "required": true,
          "value": "5513481385"
       },
       "BOT_ID": {
-         "description": "Your Telegram Bot ID.",
+         "description": "𝚈𝙾𝚄𝚁 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙱𝙾𝚃 𝙸𝙳.",
          "required": true,
-         "value": "YOUR BOT_ID"
+         "value": ""
       },
       "OWNER_USERNAME": {
-         "description": "Your Telegram username without the @",
+         "description": "𝚈𝙾𝚄𝚁 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 𝚆𝙸𝚃𝙷𝙾𝚄𝚃 𝚃𝙷𝙴 @",
          "value": "Mr_Disaster_XD"
       },
       "SUPPORT_CHAT": {
-         "description": "The Telegram Support Group Where Users of your Bot can Go and ask their Questions.",
+         "description": "𝚃𝙷𝙴 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚆𝙷𝙴𝚁𝙴 𝚄𝚂𝙴𝚁𝚂 𝙾𝙵 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝙲𝙰𝙽 𝙶𝙾 𝙰𝙽𝙳 𝙰𝚂𝙺 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽.",
          "required": true,
          "value": "TechQuardSupport"
       },
      "UPDATES_CHANNEL": {
-         "description": "The Telegram News/Update Channel Where Users of your Bot can Go and check updates by you.",
+         "description": "𝚃𝙷𝙴 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙽𝙴𝚆𝚂 / 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚆𝙷𝙴𝚁𝙴 𝚄𝚂𝙴𝚁𝚂 𝙾𝙵 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝙲𝙰𝙽 𝙶𝙾 𝙰𝙽𝙳 𝙲𝙷𝙴𝙲𝙺 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 𝙱𝚈 𝚈𝙾𝚄.",
          "required": true,
          "value": "TechQuard"
       },     
       "EVENT_LOGS": {
-         "description": "Event logs CHANNEL to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "𝙴𝚅𝙴𝙽𝚃 𝙻𝙾𝙶𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙽𝙾𝚃𝙴 𝙳𝙾𝚆𝙽 𝙸𝙼𝙿𝙾𝚁𝚃𝙰𝙽𝚃 𝙱𝙾𝚃 𝙻𝙴𝚅𝙴𝙻 𝙴𝚅𝙴𝙽𝚃𝚂, 𝚁𝙴𝙲𝙾𝙼𝙼𝙴𝙽𝙳𝙴𝙳 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙸𝚂 𝙿𝚄𝙱𝙻𝙸𝙲. 𝙴𝚇: '-123456'",
          "required": true,
          "value": "-1001538788750"
       },
