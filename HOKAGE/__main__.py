@@ -145,7 +145,7 @@ buttons = [
 
 buttons2 = [
            [
-        InlineKeyboardButton(text="🐙 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/SIXTH_H0KAGE)
+        InlineKeyboardButton(text="🐙 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/SIXTH_H0KAGE"),
         InlineKeyboardButton(
             text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD"
         ),
