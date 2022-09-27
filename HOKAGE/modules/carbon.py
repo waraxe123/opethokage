@@ -52,20 +52,20 @@ async def help(client: Client, message: Message):
     USERNAME = get_me.username
     buttons =  [
            [
-        InlineKeyboardButton(text="🐙 ʀᴇᴘᴏsɪᴛᴏʀʏ", url="https://github.com/Sumit9969/HokageRobot"),
+        InlineKeyboardButton(text="🐙 ʀᴇᴘᴏsɪᴛᴏʀʏ", url="https://xnxx.com"),
         InlineKeyboardButton(
-            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD"
+            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mithloraa"
         ),
     ],
     [
-        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TechQuardSupport"),
+        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/AstroMusikk"),
         InlineKeyboardButton(
-            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"
+            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/AstroMusikk"
         ),
     ],
            ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo=f"https://te.legra.ph/file/501c5315150b4f27daf9f.mp4", caption=f"{REPO_TEXT}", reply_markup=reply_markup)
+    await message.reply_photo(photo=f"https://telegra.ph/file/c16b730bfdf7c7f0625fa.jpg", caption=f"{REPO_TEXT}", reply_markup=reply_markup)
 
 
 __mod_name__ = "𝙲ᴀʀʙᴏɴ"
