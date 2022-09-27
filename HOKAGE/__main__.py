@@ -187,7 +187,7 @@ buttons3 = [
                 
             ],
             [
-                InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home"),
+                InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="Hokage_back"),
             ]
             ]
 
