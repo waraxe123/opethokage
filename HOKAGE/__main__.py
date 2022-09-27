@@ -198,11 +198,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="about_info":
         button = [
             [
-                InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mr_DiSasTer_XD"),
-                InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/kakashi_bots_updates"),
+                InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mithloraa"),
+                InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/AstroMusikk"),
             ],
             [
-                InlineKeyboardButton("🫖 ʀᴇᴘᴏsɪᴛᴏʀʏ", url=f"https://github.com/Sumit9969/HokageRobot"),
+                InlineKeyboardButton("🫖 ʀᴇᴘᴏsɪᴛᴏʀʏ", url=f"https://xnxx.com"),
                 InlineKeyboardButton("☘ ᴏᴛʜᴇʀ ʙᴏᴛs", callback_data="other_bots"),
             ],
             [
@@ -221,12 +221,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="other_bots":
         button = [
             [
-                InlineKeyboardButton("💭 ᴍᴜsɪᴄ ʙᴏᴛ", url=f"https://t.me/AnonMusicBot"),
-                InlineKeyboardButton("⛓ ᴍᴜsɪᴄ ᴄʟᴏɴᴇ", url=f"https://t.me/MusicsCloneBot"),
+                InlineKeyboardButton("💭 ᴍᴜsɪᴄ ʙᴏᴛ", url=f"https://t.me/herantapibot"),
+                InlineKeyboardButton("⛓ ᴍᴜsɪᴄ ᴄʟᴏɴᴇ", url=f"https://t.me/herantapibot"),
             ],
             [
-                InlineKeyboardButton("📚 ʙᴏᴛs ʟɪsᴛ", url="https://t.me/TechQuardBot"),
-                InlineKeyboardButton("🌽 ʏᴏᴜᴛᴜʙᴇ ", url="https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"),
+                InlineKeyboardButton("📚 ʙᴏᴛs ʟɪsᴛ", url="https://t.me/Mithloraa"),
+                InlineKeyboardButton("🌽 ʏᴏᴜᴛᴜʙᴇ ", url="https://youtube.com/channel/UCtI7hbYsnsnsnsnsnsnns"),
             ],
             [
                 InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="about_info"),
@@ -828,12 +828,12 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://te.legra.ph/file/0d7d5f34661b08d331c80.jpg",
+                animation="https://telegra.ph/file/c16b730bfdf7c7f0625fa.jpg",
                 caption=f"""
 ㅤ◨ {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ.
 
 ━━━━━━━━━━━━━
-≕ **ᴍʏ ᴏᴡɴᴇʀ :** [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/{OWNER_USERNAME})
+≕ **ᴍʏ ᴏᴡɴᴇʀ :** [ᴍɪᴛʜʟᴏʀᴀᴀ](https://t.me/{OWNER_USERNAME})
 ≕ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
 ≕ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
 ≕ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
