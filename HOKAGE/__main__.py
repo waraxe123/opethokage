@@ -8,8 +8,6 @@ from sys import version_info
 from typing import Optional
 from pyrogram import Client, idle, filters
 from pyrogram.types import Message
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from pyrogram.errors import MessageNotModified
 
 from pyrogram import __version__ as pver
 from pyrogram import idle
@@ -132,7 +130,7 @@ buttons = [
     [
         InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
         InlineKeyboardButton(
-            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
+            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="Hokage_"
         ),
     ],
     [
@@ -145,7 +143,7 @@ buttons = [
 
 buttons2 = [
            [
-        InlineKeyboardButton(text="🐙 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/SIXTH_H0KAGE"),
+        InlineKeyboardButton(text="💢 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/Mithloraa"),
         InlineKeyboardButton(
             text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD"
         ),
@@ -180,100 +178,22 @@ INFO_ABOUT = """
 ʜᴇʀᴇ ɪs ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏғ ʜᴏᴋᴀɢᴇ ʀᴏʙᴏᴛ
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴇᴄʜǫᴜᴀʀᴅ
 """
-
-OTHER_TEXT = """
-ʜᴇʀᴇ ᴀʟʟ ᴍʏ ʟᴇɢᴇɴᴅᴀʀʏ ʙᴏᴛs
-◈ ʙᴀss ʙᴏᴏsᴛᴇᴅ ᴍᴜsɪᴄ ʙᴏᴛ
-◈ ᴏᴜʀ ʙᴏᴛs ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ
-◈ ᴍᴀɴᴀɢᴇᴍɴᴇɴᴛ ʙᴏᴛ ғᴜʟʟʏ ʙᴀsᴇᴅ ᴀɴɪᴍᴇᴅ
-ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴀʟsᴏ ɴᴇᴛᴡᴏʀᴋ
-"""
-
-
-DONATE_STRING = """➢ ᴊᴜsᴛ sᴜᴘᴘᴏʀᴛ ᴜs, ᴡᴇ ᴡɪʟʟ ʙᴇ ᴍᴏʀᴇ ᴛʜᴀɴ ʜᴀᴘᴘʏ"""
-
-
-@Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
-    if query.data=="about_info":
-        button = [
+buttons3 = [
             [
                 InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mithloraa"),
                 InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/AstroMusikk"),
             ],
             [
                 InlineKeyboardButton("🫖 ʀᴇᴘᴏsɪᴛᴏʀʏ", url=f"https://xnxx.com"),
-                InlineKeyboardButton("☘ ᴏᴛʜᴇʀ ʙᴏᴛs", callback_data="other_bots"),
+                
             ],
             [
                 InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="home"),
             ]
             ]
-        reply_markup = InlineKeyboardMarkup(button)
-        try:
-            await query.edit_message_text(
-                INFO_ABOUT,
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
-    elif query.data=="other_bots":
-        button = [
-            [
-                InlineKeyboardButton("💭 ᴍᴜsɪᴄ ʙᴏᴛ", url=f"https://t.me/herantapibot"),
-                InlineKeyboardButton("⛓ ᴍᴜsɪᴄ ᴄʟᴏɴᴇ", url=f"https://t.me/herantapibot"),
-            ],
-            [
-                InlineKeyboardButton("📚 ʙᴏᴛs ʟɪsᴛ", url="https://t.me/Mithloraa"),
-                InlineKeyboardButton("🌽 ʏᴏᴜᴛᴜʙᴇ ", url="https://youtube.com/channel/UCtI7hbYsnsnsnsnsnsnns"),
-            ],
-            [
-                InlineKeyboardButton("⟲ ʙᴀᴄᴋ ⟳", callback_data="about_info"),
-            ]
-            ]
-        reply_markup = InlineKeyboardMarkup(button)
-        try:
-            await query.edit_message_text(
-                OTHER_TEXT.format(query.from_user.first_name, query.from_user.id),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
-
-    elif query.data=="home":
-        button = [
-    [
-        InlineKeyboardButton(
-            text="➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕ ", url=f"t.me/{BOT_USERNAME}?startgroup=true"
-        )
-    ],
-    [
-        InlineKeyboardButton(text="🧰️ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="🎓 ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="about_info"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="⛽ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(
-            text="📣 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
-        ),
-    ],
-]
-
-        reply_markup = InlineKeyboardMarkup(button)
-        try:
-            await query.edit_message_text(
-                PM_START_TEXT.format(query.from_user.first_name, query.from_user.id),
-                reply_markup=reply_markup
-            )
-        except MessageNotModified:
-            pass
 
 
-
-
+DONATE_STRING = """➢ ᴊᴜsᴛ sᴜᴘᴘᴏʀᴛ ᴜs, ᴡᴇ ᴡɪʟʟ ʙᴇ ᴍᴏʀᴇ ᴛʜᴀɴ ʜᴀᴘᴘʏ"""
 
 
 IMPORTED = {}
@@ -535,9 +455,18 @@ def help_button(update, context):
 
 
 
-def Hokage_callback_data(update, context):
+def hokage_callback_data(update, context):
     query = update.callback_query
-    if query.data == "Hokage_back":
+    first_name = update.effective_user.first_name
+    uptime = get_readable_time((time.time() - StartTime))
+    if query.data == "Hokage_":
+        query.message.edit_text(
+            text=INFO_ABOUT,
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(buttons3))
+                
+    elif query.data == "Hokage_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -552,6 +481,7 @@ def Hokage_callback_data(update, context):
             timeout=60,
             disable_web_page_preview=False,
         )
+
 
 
 @typing_action
@@ -862,7 +792,9 @@ def main():
         settings_button, pattern=r"stngs_", run_async=True
     )
 
-    
+    hokage_callback_handler = CallbackQueryHandler(
+        Hokage_callback_data, pattern=r"Hokage_", run_async=True
+    )
     donate_handler = DisableAbleCommandHandler("donate", donate, run_async=True)
     migrate_handler = MessageHandler(
         Filters.status_update.migrate, migrate_chats, run_async=True
@@ -871,7 +803,7 @@ def main():
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
-    # dispatcher.add_handler(data_callback_handler)
+    dispatcher.add_handler(hokage_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
