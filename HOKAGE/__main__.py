@@ -793,7 +793,7 @@ def main():
     )
 
     hokage_callback_handler = CallbackQueryHandler(
-        Hokage_callback_data, pattern=r"Hokage_", run_async=True
+        hokage_callback_data, pattern=r"Hokage_", run_async=True
     )
     donate_handler = DisableAbleCommandHandler("donate", donate, run_async=True)
     migrate_handler = MessageHandler(
