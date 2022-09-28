@@ -14,20 +14,20 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.locks_sql as sql
-from FallenRobot import DRAGONS, LOGGER, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
-from FallenRobot.modules.helper_funcs.chat_status import (
+import HOKAGE.modules.sql.locks_sql as sql
+from HOKAGE import DRAGONS, LOGGER, dispatcher
+from HOKAGE.modules.connection import connected
+from HOKAGE.modules.disable import DisableAbleCommandHandler
+from HOKAGE.modules.helper_funcs.alternate import send_message, typing_action
+from HOKAGE.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.approve_sql import is_approved
+from HOKAGE.modules.log_channel import loggable
+from HOKAGE.modules.sql.approve_sql import is_approved
 
 ad = AlphabetDetector()
 
