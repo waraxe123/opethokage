@@ -142,9 +142,9 @@ buttons = [
 
 buttons2 = [
            [
-        InlineKeyboardButton(text="💢 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/Mithloraa"),
+        InlineKeyboardButton(text="💢 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/xflshinde"),
         InlineKeyboardButton(
-            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mr_DiSasTer_XD"
+            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/xflshinde"
         ),
     ],
     [
@@ -179,8 +179,8 @@ INFO_ABOUT = """
 """
 buttons3 = [
             [
-                InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/Mithloraa"),
-                InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/AstroMusikk"),
+                InlineKeyboardButton("🍂 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/xflshinde"),
+                InlineKeyboardButton("🍄 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/Satpamhoe1"),
             ],
             [
                 InlineKeyboardButton("🫖 ʀᴇᴘᴏsɪᴛᴏʀʏ", url=f"https://xnxx.com"),
