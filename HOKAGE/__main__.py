@@ -144,7 +144,7 @@ buttons2 = [
            [
         InlineKeyboardButton(text="💢 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url="https://t.me/ItsProf"),
         InlineKeyboardButton(
-            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/xelyourslurred"),
+            text="🎓 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/xelyourslurred"
         ),
     ],
     [
